@@ -1,4 +1,0 @@
-name: DonkeyPlus
-version: '1.0-SNAPSHOT'
-main: sim.donkeyPlus.DonkeyPlus
-api-version: '1.20'
