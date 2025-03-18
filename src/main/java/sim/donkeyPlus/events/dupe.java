@@ -16,7 +16,7 @@ public class dupe  implements  Listener {
         if((entity.getType() == EntityType.DONKEY || entity.getType() == EntityType.LLAMA)
                 && (!(entity instanceof LivingEntity livingEntity) || livingEntity.isInvisible())) {
             Random random = new Random();
-            int randomInt = random.nextInt(6);
+            int randomInt = random.nextInt(4);
             for (int i = 0; i < randomInt; i++) {
                 for (int x = 0; x < b.getDrops().size(); x++)
                     entity.getWorld().dropItemNaturally(entity.getLocation(), b.getDrops().get(x));
