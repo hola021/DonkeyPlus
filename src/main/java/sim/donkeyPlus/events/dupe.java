@@ -24,8 +24,8 @@ public class dupe implements Listener {
 
         if ((entity.getType() == EntityType.DONKEY || entity.getType() == EntityType.LLAMA)
                 && (!(entity instanceof LivingEntity livingEntity) || livingEntity.isInvisible())) {
-            int minMultiplier = plugin.getConfig().getInt("dupe.min-multiplier", 0);
-            int maxMultiplier = plugin.getConfig().getInt("dupe.max-multiplier", 4);
+            int minMultiplier = plugin.getConfig().getInt("dupe.min-dupe", 0);
+            int maxMultiplier = plugin.getConfig().getInt("dupe.max-dupe", 4);
             Random random = new Random();
             int randomInt = random.nextInt(maxMultiplier - minMultiplier + 1) + minMultiplier;
             
