@@ -1,0 +1,6 @@
+dupe:
+  enabled: true
+  # Số lượng items tối thiểu sẽ được nhân lên (min: 0)
+  min-multiplier: 0
+  # Số lượng items tối đa sẽ được nhân lên
+  max-multiplier: 4

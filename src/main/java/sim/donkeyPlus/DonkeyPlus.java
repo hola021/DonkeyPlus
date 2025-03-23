@@ -8,7 +8,10 @@ public final class DonkeyPlus extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new dupe(), this);
+        saveDefaultConfig();
+        reloadConfig();
+        
+        getServer().getPluginManager().registerEvents(new dupe(this), this);
         getServer().getConsoleSender().sendMessage(ChatColor.YELLOW + "[DonkeyPlus] The Plugin is now Enabled");
     }
     @Override
